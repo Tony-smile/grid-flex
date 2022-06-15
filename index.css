@@ -1,0 +1,202 @@
+@import url('/grid.css');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Righteous&family=Sofadi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Righteous&family=Sofadi+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    height: 100vh;
+    width: 100%;
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 55%;
+
+    gap: 0;
+
+}
+
+
+
+.box-1 {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(31, 77%, 52%);
+    width: calc(100%/3);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+
+.box-2 {
+    background-color: hsl(184, 100%, 22%);
+    display: flex;
+    flex-direction: column;
+    width: calc(100%/3);
+
+}
+
+.box-3 {
+    background-color: hsl(179, 100%, 13%);
+    display: flex;
+    flex-direction: column;
+    width: calc(100%/3);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+img.cars {
+    display: flex;
+    margin-top: 15%;
+    margin-left: 15%;
+    width: 85px;
+    height: 50px;
+}
+
+h1 {
+    display: flex;
+    margin-left: 15%;
+    margin-top: 15%;
+    color: hsl(0, 0%, 95%);
+    font-size: 2.5em;
+font-family: 'Big Shoulders Display', cursive;
+   
+}
+
+.description {
+    display: flex;
+    margin-left: 15%;
+    margin-top: 10%;
+    line-height: 1.8em;
+    font-family: 'Lexend Deca', sans-serif;
+
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.btn{
+    display: inline-block;
+    margin-left: 15%;
+    align-content: flex-end;
+    margin-top: 22%;
+
+}
+
+#btn1>a {
+    text-decoration: none;
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 16px 40px;
+    border-radius: 30px;
+    height: 10px;
+
+    color: hsl(31, 77%, 52%);
+
+}
+
+
+#btn2>a {
+    text-decoration: none;
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 16px 40px;
+    border-radius: 30px;
+    height: 10px;
+
+    color: hsl(184, 100%, 22%);
+
+}
+
+#btn3>a {
+    text-decoration: none;
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 16px 40px;
+    border-radius: 30px;
+    height: 10px;
+    color: hsl(179, 100%, 13%);
+
+}
+
+#btn1 a:hover {
+    color: hsla(0, 0%, 100%, 0.75);
+    background-color: transparent;
+    border:2px solid hsla(0, 0%, 100%, 0.75);
+}
+#btn2 a:hover {
+    color: hsla(0, 0%, 100%, 0.75);
+    background-color: transparent;
+    border:2px solid hsla(0, 0%, 100%, 0.75);
+}
+#btn3 a:hover {
+    color: hsla(0, 0%, 100%, 0.75);
+    background-color: transparent;
+    border:2px solid hsla(0, 0%, 100%, 0.75);
+}
+
+@media only screen and (min-width: 200px) and (max-width: 809px) {
+    header>nav {
+        margin-top: 10%;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        height: 100%;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: 80%;
+        gap: 2em;
+
+    }
+
+    .box-1 {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .box-2 {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .box-3 {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .btn
+    {
+        margin-bottom: 10%;
+    }
+
+}
+
+@media only screen and (min-width: 810px) and (max-width: 1440px) {
+    main {
+        display: flex;
+        width: 85%;
+    }
+
+    .btn
+     {
+        margin-top: 28%;
+    }
+}
